@@ -1,11 +1,20 @@
 package main
 
 import (
+	"io/ioutil"
 	"log"
 	"net/http"
 )
 
 func main() {
+	content, err := ioutil.ReadFile("testing.txt")
+
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	testing := string(content)
+
 	// Handler points to available directories
 	http.Handle("/web/html", http.StripPrefix("/web/html", http.FileServer(http.Dir("web/html"))))
 	http.Handle("/web/scripts/", http.StripPrefix("/web/scripts/", http.FileServer(http.Dir("web/scripts"))))
@@ -18,7 +27,7 @@ func main() {
 	})
 
 	//Serves local webpage for testing
-	if true {
+	if testing == "true" {
 		errhttp := http.ListenAndServe(":8080", nil)
 		if errhttp != nil {
 			log.Fatal("Web server (HTTP): ", errhttp)
