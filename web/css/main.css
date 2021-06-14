@@ -27,3 +27,8 @@ a {
   text-decoration: underline;
   color: black;
 }
+
+code {
+  color: whitesmoke;
+  background-color: rgb(150, 150, 150);
+}
