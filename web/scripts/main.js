@@ -21,7 +21,6 @@ function req(username) {
 
   xhr.onload = function() {
       const data = JSON.parse(this.response);
-      console.log(data);
 
       for (i = 0; i < data.length; i++) {
         if (data[i].name == "osutools") {

@@ -45,3 +45,17 @@ p {
 h1 {
   color: whitesmoke;
 }
+
+footer {
+  text-align: left;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background-color: #222;
+  left: 0px;
+  height: 5%;
+}
+
+footer p {
+  padding-left: 10px;
+}
