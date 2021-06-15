@@ -1,6 +1,6 @@
 .accordion {
-  background-color: #eee;
-  color: #444;
+  background-color: rgb(60, 60, 60);
+  color: whitesmoke;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -17,7 +17,7 @@
 
 .panel {
   padding: 0 18px;
-  background-color: white;
+  background-color: rgb(80, 80, 80);
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
@@ -25,10 +25,23 @@
 
 a {
   text-decoration: underline;
-  color: black;
+  color: lightcyan;
 }
 
 code {
   color: whitesmoke;
   background-color: rgb(150, 150, 150);
+}
+
+body, head {
+  background-color: #444;
+  font-family: 'Rubik', sans-serif;
+}
+
+p {
+  color: whitesmoke;
+}
+
+h1 {
+  color: whitesmoke;
 }
