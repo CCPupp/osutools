@@ -4,6 +4,7 @@
     <link rel="stylesheet" type="text/css" href="web/css/main.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"> 
+    <script src="scripts/main.js"></script>
 </header>
 
 <head>
@@ -13,7 +14,7 @@
   <p>Not familiar with github? Join <a href="https://discord.gg/PsjKSvR4WS">my development discord</a> and make a feature request.</p>
 </head>
 
-<body>
+<body onload="req('CCPupp')">
     <button class="accordion">Communities</button>
     <div class="panel">
       <ul>
@@ -206,5 +207,9 @@
 </body>
 
 <script src="web/scripts/main.js"></script>
+
+<footer>
+  <p style="text-align: right" id="lastModified"></p>
+</footer>
 
 </html>
