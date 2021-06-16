@@ -48,6 +48,10 @@ h1 {
   color: whitesmoke;
 }
 
+h2 {
+  color: lightpink;
+}
+
 footer {
   text-align: left;
   position: fixed;
