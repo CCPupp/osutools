@@ -24,7 +24,7 @@ function req(username) {
 
       for (i = 0; i < data.length; i++) {
         if (data[i].name == "osutools") {
-          document.getElementById("lastModified").innerHTML = "Last modified: " + data[i].updated_at.slice(0, 10) + " at " + data[i].updated_at.slice(11, 19) + " utc";
+          document.getElementById("lastModified").innerHTML = "Last modified: " + data[i].updated_at.slice(0, 10) + " at " + data[i].updated_at.slice(11, 19) + " UTC";
         }
       }
   }
