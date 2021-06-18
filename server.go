@@ -28,7 +28,7 @@ func main() {
 
 	//Serves local webpage for testing
 	if testing == "true" {
-		errhttp := http.ListenAndServe(":8080", nil)
+		errhttp := http.ListenAndServe("localhost:3000", nil)
 		if errhttp != nil {
 			log.Fatal("Web server (HTTP): ", errhttp)
 		}

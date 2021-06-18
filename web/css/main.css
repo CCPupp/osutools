@@ -1,68 +1,100 @@
-.accordion {
-  background-color: rgb(60, 60, 60);
-  color: whitesmoke;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font: inherit;
-  font-size: 1.1rem;
-  transition: background 0.4s;
+a {
+  color: #a58faa;
 }
-  
-.active, .accordion:hover {
-  background-color: #777;
-  color: white;
+
+.navbar-title {
+  font-size: 3rem;
+  padding-left: 2rem;
+  text-align: center;
+}
+
+.navbar {
+  position: sticky;
+  z-index: 10;
+  width: 100%;
+  height: 5rem;
+  top: 0;
+  display: flex;
+  align-items: center;
+  background-color: #907fa4;
+  color: #ededd0;
+}
+
+body {
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #a58faa;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 2rem;
+  text-align: center;
+  justify-content: center;
+  background-color: #ededd0;
+  color: #907fa4;
+  box-shadow: inset 0px 0px 20px #a58faa;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 5%;
+}
+
+.accordion {
+  background-color: #ededd0;
+  color: #907fa4;
+  box-shadow: inset 0px 0px 20px #a58faa;
+  border-radius: 50px;
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font: inherit;
+  font-size: 3rem;
+  border: none;
+  transition: color 0.3s;
+}
+
+.active,
+.accordion:hover {
   font-weight: bold;
+  color: #a58faa;
 }
 
 .panel {
-  padding: 0 18px;
-  background-color: rgb(80, 80, 80);
+  background-color: #ededd0;
+  color: #907fa4;
+  box-shadow: inset 0px 0px 20px #a58faa;
+  border-radius: 50px;
+  width: 100%;
+  padding: 0 2rem;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
 
-a {
-  text-decoration: underline;
-  color: lightcyan;
-}
-
-code {
-  color: whitesmoke;
-  background-color: rgb(150, 150, 150);
-}
-
-body, head {
-  background-color: #444;
-  font-family: 'Rubik', sans-serif;
-}
-
-p {
-  color: whitesmoke;
-}
-
-h1 {
-  color: whitesmoke;
-}
-
-h2 {
-  color: lightpink;
-}
-
 footer {
-  text-align: left;
-  position: fixed;
-  bottom: 0px;
-  width: 100%;
-  background-color: #222;
-  left: 0px;
-  height: 5%;
+  background-color: #907fa4;
+  color: #ededd0;
+  padding: 1rem;
+}
+footer p {
+  margin: 0;
 }
 
-footer p {
-  padding-left: 10px;
-}
+/*# sourceMappingURL=main.css.map */
