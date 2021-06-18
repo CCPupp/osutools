@@ -1,11 +1,3 @@
-body {
-  flex-direction: column;
-  font-family: "Rubik", Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  margin: 0;
-  background-color: #a58faa;
-}
-
 .navbar-title {
   font-size: 3rem;
   font-family: Rubik;
@@ -21,6 +13,28 @@ body {
   align-items: center;
   background-color: #907fa4;
   color: #ededd0;
+}
+
+body {
+  margin: 0;
+}
+
+.body {
+  flex-direction: column;
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  background-color: #a58faa;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: #907fa4;
+  background-color: #ededd0;
+  text-align: center;
+  justify-content: center;
+  box-shadow: inset 0px 0px 20px #a58faa;
 }
 
 /*# sourceMappingURL=main.css.map */

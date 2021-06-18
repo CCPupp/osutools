@@ -3,15 +3,6 @@ $secondary: #a58faa;
 $tertiary: #ededd0;
 $highlight: #a6d6d6;
 
-body {
-    flex-direction: column;
-    font-family: "Rubik", Arial, Helvetica, sans-serif;
-    font-weight: 400;
-
-    margin: 0;
-    background-color: $secondary;
-}
-
 .navbar-title {
     font-size: 3rem;
     font-family: Rubik;
@@ -30,4 +21,29 @@ body {
 
     background-color: $primary;
     color: $tertiary;
+}
+
+body {
+    margin: 0;
+}
+
+.body {
+    flex-direction: column;
+    font-family: "Rubik", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+
+    background-color: $secondary;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    color: $primary;
+    background-color: $tertiary;
+    text-align: center;
+    justify-content: center;
+
+    box-shadow: inset 0px 0px 20px $secondary;
 }
