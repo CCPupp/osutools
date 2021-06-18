@@ -1,3 +1,7 @@
+p {
+  font-size: 1.5rem;
+}
+
 a {
   color: #a58faa;
 }
@@ -36,8 +40,8 @@ body {
 .section {
   display: flex;
   flex-direction: column;
-  width: 100%;
   margin-bottom: 2rem;
+  padding: 0 15%;
   text-align: center;
   justify-content: center;
   background-color: #ededd0;
@@ -49,7 +53,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0 5%;
+  padding: 0 15%;
 }
 
 .accordion {
@@ -61,7 +65,7 @@ body {
   cursor: pointer;
   width: 100%;
   padding: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   font: inherit;
   font-size: 3rem;
   border: none;
@@ -81,11 +85,20 @@ body {
   border-radius: 50px;
   width: 100%;
   padding: 0 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   box-sizing: border-box;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+}
+.panel li {
+  font-size: 1.75rem;
+}
+.panel li code {
+  font-size: 1rem;
+}
+.panel li a {
+  font-weight: bold;
 }
 
 footer {
