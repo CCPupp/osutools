@@ -3,20 +3,36 @@ $secondary: #a58faa;
 $tertiary: #ededd0;
 $highlight: #a6d6d6;
 
+@mixin container-inner-shadow($round: false) {
+    background-color: $tertiary;
+    color: $primary;
+    box-shadow: inset 0px 0px 20px $secondary;
+
+    @if $round {
+        border-radius: 50px;
+    }
+}
+
+a {
+    color: $secondary;
+}
+
 .navbar-title {
     font-size: 3rem;
-    font-family: Rubik;
 
+    padding-left: 2rem;
     text-align: center;
 }
 
 .navbar {
+    position: sticky;
+    z-index: 10;
+
     width: 100%;
     height: 5rem;
-    padding: 0 2rem;
+    top: 0;
 
     display: flex;
-    flex-direction: row;
     align-items: center;
 
     background-color: $primary;
@@ -24,26 +40,82 @@ $highlight: #a6d6d6;
 }
 
 body {
+    font-family: "Rubik", Arial, Helvetica, sans-serif;
+
+    font-weight: 400;
     margin: 0;
 }
 
 .body {
+    display: flex;
     flex-direction: column;
-    font-family: "Rubik", Arial, Helvetica, sans-serif;
-    font-weight: 400;
 
+    height: 100%;
     background-color: $secondary;
 }
 
 .section {
     display: flex;
     flex-direction: column;
-    width: 100%;
 
-    color: $primary;
-    background-color: $tertiary;
+    width: 100%;
+    margin-bottom: 2rem;
+
     text-align: center;
     justify-content: center;
 
-    box-shadow: inset 0px 0px 20px $secondary;
+    @include container-inner-shadow();
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 0 5%;
+}
+
+.accordion {
+    @include container-inner-shadow(true);
+    position: relative;
+    cursor: pointer;
+
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+
+    font: inherit;
+    font-size: 3rem;
+    border: none;
+
+    transition: color 0.3s;
+}
+
+.active,
+.accordion:hover {
+    font-weight: bold;
+    color: $secondary;
+}
+
+.panel {
+    @include container-inner-shadow(true);
+    width: 100%;
+    padding: 0 2rem;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+footer {
+    background-color: $primary;
+    color: $tertiary;
+
+    padding: 1rem;
+
+    p {
+        margin: 0;
+    }
 }
