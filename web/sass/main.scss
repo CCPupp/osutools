@@ -82,11 +82,14 @@ body {
 
 .accordion {
     @include container-inner-shadow(true);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: relative;
     cursor: pointer;
 
     width: 100%;
-    padding: 1rem;
+    padding: 1rem 2rem;
     margin-bottom: 0.5rem;
 
     font: inherit;
@@ -94,12 +97,25 @@ body {
     border: none;
 
     transition: color 0.3s;
+
+    .caret {
+        transition: all 0.5s;
+        width: 4rem;
+        height: 4rem;
+
+        fill: $primary;
+    }
 }
 
 .active,
 .accordion:hover {
     font-weight: bold;
     color: $secondary;
+}
+
+.active .caret {
+    transform: rotate(180deg);
+    fill: $highlight;
 }
 
 .panel {
@@ -116,6 +132,9 @@ body {
     li {
         font-size: 1.75rem;
 
+        p {
+            margin-top: 0.3rem;
+        }
         code {
             font-size: 1rem;
         }
