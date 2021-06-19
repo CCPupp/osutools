@@ -61,21 +61,35 @@ body {
   color: #907fa4;
   box-shadow: inset 0px 0px 20px #a58faa;
   border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: relative;
   cursor: pointer;
   width: 100%;
-  padding: 1rem;
+  padding: 1rem 2rem;
   margin-bottom: 0.5rem;
   font: inherit;
   font-size: 3rem;
   border: none;
   transition: color 0.3s;
 }
+.accordion .caret {
+  transition: all 0.5s;
+  width: 4rem;
+  height: 4rem;
+  fill: #907fa4;
+}
 
 .active,
 .accordion:hover {
   font-weight: bold;
   color: #a58faa;
+}
+
+.active .caret {
+  transform: rotate(180deg);
+  fill: #a6d6d6;
 }
 
 .panel {
@@ -93,6 +107,9 @@ body {
 }
 .panel li {
   font-size: 1.75rem;
+}
+.panel li p {
+  margin-top: 0.3rem;
 }
 .panel li code {
   font-size: 1rem;
