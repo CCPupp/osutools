@@ -103,7 +103,10 @@ body {
         width: 4rem;
         height: 4rem;
 
-        fill: $primary;
+        mask: url(../assets/caret.svg) no-repeat 50% 50%;
+        mask-size: cover;
+
+        background-color: $primary;
     }
 }
 
@@ -115,7 +118,7 @@ body {
 
 .active .caret {
     transform: rotate(180deg);
-    fill: $highlight;
+    background-color: $highlight;
 }
 
 .panel {

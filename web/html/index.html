@@ -1,597 +1,429 @@
 <!DOCTYPE html>
 <html lang="en">
-    <header>
-        <link rel="stylesheet" type="text/css" href="web/css/main.css" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet" />
-        <script src="scripts/main.js"></script>
-        <title>osu!tools resource list</title>
-    </header>
+<header>
+    <link rel="stylesheet" type="text/css" href="web/css/main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet" />
+    <script src="scripts/main.js"></script>
+    <title>osu!tools resource list</title>
+</header>
 
-    <head>
-        <title>osu!stats</title>
-    </head>
+<head>
+    <title>osu!stats</title>
+</head>
 
-    <body onload="req('CCPupp')">
-        <div class="navbar"><span class="navbar-title">osu!tools</span></div>
-        <div class="body">
-            <div class="section">
-                <p>
-                    This is a list of 3rd party tools related to the rhythm game
-                    <a href="https://osu.ppy.sh">osu!</a>
-                </p>
-                <p>
-                    If you would like your work added to the list, please make a pull request at
-                    <a href="https://github.com/CCPupp/osutools">the github repository.</a>
-                </p>
-                <p>
-                    Not familiar with github? Join
-                    <a href="https://discord.gg/PsjKSvR4WS">my development discord</a> and make a
-                    feature request.
-                </p>
-            </div>
-            <div class="list">
-                <button class="accordion">
-                    API Wrappers
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="1792"
-                        height="1792"
-                        viewBox="0 0 1792 1792"
-                        class="caret"
-                    >
-                        <path
-                            d="M1408 704q0 26-19 45l-448 448q-19 19-45 19t-45-19l-448-448q-19-19-19-45t19-45 45-19h896q26 0 45 19t19 45z"
-                        />
-                    </svg>
-                </button>
-                <div class="panel">
-                    <h2>
-                        Disclaimer: The new version of the API (V2) is still under development by
-                        peppy. Apps using V2 wrappers are subject to breaking if peppy makes a
-                        change.
-                    </h2>
-                    <ul>
-                        <li>
-                            <a target="_blank" href="https://github.com/circleguard/ossapi"
-                                >Python3 API</a
-                            >
-                            <code>https://github.com/circleguard/ossapi</code>
-                            <p>Support for both V1 and V2 of the API.</p>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://github.com/Kiritsu/OsuSharp">C# API</a>
-                            <code>https://github.com/Kiritsu/OsuSharp</code>
-                            <p>Support for V1 only, V2 is WIP.</p>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://github.com/thehowl/go-osuapi"
-                                >golang API</a
-                            >
-                            <code>https://github.com/thehowl/go-osuapi</code>
-                            <p>Support for V1 only.</p>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://github.com/nicholastay/nodesu"
-                                >node.js API</a
-                            >
-                            <code>https://github.com/nicholastay/nodesu</code>
-                            <p>Support for V1 only.</p>
-                        </li>
-                    </ul>
-                </div>
-                <button class="accordion">
-                    Communities / Leaderboards
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="1792"
-                        height="1792"
-                        viewBox="0 0 1792 1792"
-                        class="caret"
-                    >
-                        <path
-                            d="M1408 704q0 26-19 45l-448 448q-19 19-45 19t-45-19l-448-448q-19-19-19-45t19-45 45-19h896q26 0 45 19t19 45z"
-                        />
-                    </svg>
-                </button>
-                <div class="panel">
-                    <ul>
-                        <li>
-                            <a target="_blank" href="https://states.osutools.com"
-                                >USA State Leaderboard</a
-                            >
-                            <code>https://states.osutools.com</code>
-                            <p>A self-maintined leaderboard for all 50 states.</p>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://osuchan.syrin.me/"
-                                >Custom Leaderboards</a
-                            >
-                            <code>https://osuchan.syrin.me/</code>
-                            <p>Leaderboards for many different skillsets or groups of people.</p>
-                        </li>
-                        <li>
-                            <a
-                                target="_blank"
-                                href="https://snipe.huismetbenen.nl/rankings/ca/osu/weighted-pp"
-                                >Country Snipe Leaderboard</a
-                            >
-                            <code>https://snipe.huismetbenen.nl/rankings/ca/osu/weighted-pp</code>
-                            <p>Shows how many #1's players have on country leaderboards.</p>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://osekai.net/medals/"
-                                >osu! Achievements / Medals Discussion</a
-                            >
-                            <code>https://osekai.net/medals/</code>
-                            <p>
-                                Provides information on achievements and how to earn them as well as
-                                community voted difficulty.
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-                <button class="accordion">
-                    Drivers
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="1792"
-                        height="1792"
-                        viewBox="0 0 1792 1792"
-                        class="caret"
-                    >
-                        <path
-                            d="M1408 704q0 26-19 45l-448 448q-19 19-45 19t-45-19l-448-448q-19-19-19-45t19-45 45-19h896q26 0 45 19t19 45z"
-                        />
-                    </svg>
-                </button>
-                <div class="panel">
-                    <ul>
-                        <li>
-                            <a
-                                target="_blank"
-                                href="https://github.com/OpenTabletDriver/OpenTabletDriver"
-                                >Open Tablet Driver</a
-                            >
-                            <code>https://github.com/OpenTabletDriver/OpenTabletDriver</code>
-                            <p>
-                                Cross platform tablet drivers with no admin access required, peppy
-                                has implemented a version of this into lazer.
-                            </p>
-                            <p>MAINTAINED AND WORKING</p>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://github.com/hawku/TabletDriver"
-                                >Hawku</a
-                            >
-                            <code>https://github.com/hawku/TabletDriver</code>
-                            <p>
-                                The "original" tablet driver. Unmaintained, but still very popular
-                                and stable.
-                            </p>
-                            <p>CURRENTLY BROKEN</p>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://github.com/Devocub/TabletDriver"
-                                >Devocub</a
-                            >
-                            <code>https://github.com/Devocub/TabletDriver</code>
-                            <p>Fork of the Hawku drivers with some added features.</p>
-                            <p>CURRENTLY BROKEN</p>
-                        </li>
-                    </ul>
-                </div>
-                <button class="accordion">
-                    Guides
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="1792"
-                        height="1792"
-                        viewBox="0 0 1792 1792"
-                        class="caret"
-                    >
-                        <path
-                            d="M1408 704q0 26-19 45l-448 448q-19 19-45 19t-45-19l-448-448q-19-19-19-45t19-45 45-19h896q26 0 45 19t19 45z"
-                        />
-                    </svg>
-                </button>
-                <div class="panel">
-                    <ul>
-                        <li>
-                            <a target="_blank" href="https://www.youtube.com/watch?v=uc99yWeP1h4"
-                                >osu!phd - DigitalHypno Skill Breakdown</a
-                            >
-                            <p>A comprehensive guide to every skill in osu! by DigitalHypno.</p>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://www.youtube.com/watch?v=yXdtbFNgCfY"
-                                >Spare Tapping</a
-                            >
-                            <p>Tips to improve tapping speed by Spare.</p>
-                        </li>
-                        <li>
-                            <a
-                                target="_blank"
-                                href="https://docs.google.com/document/d/1l9JG6gLRDGEoQmqaEQbQSikfFNauxtQm3LfIxmdaadQ/edit"
-                                >RyuK Speed</a
-                            >
-                            <p>In-depth guide on how to improve speed by RyuK.</p>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://www.youtube.com/c/pishifat/playlists"
-                                >Pishifat's YouTube channel</a
-                            >
-                            <p>In-depth videos on mapping and other osu! related content.</p>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://www.youtube.com/c/Tonehhosu"
-                                >Tonehhosu's YouTube channel</a
-                            >
-                            <p>Several useful guides for all play levels.</p>
-                        </li>
-                        <li>
-                            <a
-                                target="_blank"
-                                href="https://www.reddit.com/r/osugame/comments/hqoakj/tutorial_removing_perceivable_latency_for_good/"
-                                >Reducing Audio Latency</a
-                            >
-                            <p>Reddit post on methods of reducing audio latency.</p>
-                        </li>
-                    </ul>
-                </div>
-                <button class="accordion">
-                    Mapping Tools
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="1792"
-                        height="1792"
-                        viewBox="0 0 1792 1792"
-                        class="caret"
-                    >
-                        <path
-                            d="M1408 704q0 26-19 45l-448 448q-19 19-45 19t-45-19l-448-448q-19-19-19-45t19-45 45-19h896q26 0 45 19t19 45z"
-                        />
-                    </svg>
-                </button>
-                <div class="panel">
-                    <ul>
-                        <li>
-                            <a target="_blank" href="https://mappingtools.github.io/"
-                                >Mapping-Tools by Olibomby and Potoofu</a
-                            >
-                            <code>https://mappingtools.github.io/</code>
-                            <p>
-                                Program used for advanced slider creation, hitsounding, timing,
-                                among other helpful tools.
-                            </p>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://github.com/Naxesss/MapsetVerifier"
-                                >MapsetVerifier</a
-                            >
-                            <code>https://github.com/Naxesss/MapsetVerifier</code>
-                            <p>
-                                Tests for quantifiable issues in beatmapsets, such as unsnapped
-                                objects and unused files.
-                            </p>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://slider.little.moe/">SliderStudio</a>
-                            <code>https://slider.little.moe/</code>
-                            <p>Online tool used for advanced slider creation.</p>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://github.com/Himada4/OsuCollabToolFinal"
-                                >osuCollabTool</a
-                            >
-                            <code>https://github.com/Himada4/OsuCollabToolFinal</code>
-                            <p>
-                                Program that can merge and compare .osu files, among other things.
-                            </p>
-                        </li>
-                        <li>
-                            <a targer="_blank" href="https://github.com/Damnae/storybrew"
-                                >storybrew</a
-                            >
-                            <code>https://github.com/Damnae/storybrew</code>
-                            <p>Storyboard editor with robust features.</p>
-                        </li>
-                    </ul>
-                </div>
-                <button class="accordion">
-                    Multiplayer
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="1792"
-                        height="1792"
-                        viewBox="0 0 1792 1792"
-                        class="caret"
-                    >
-                        <path
-                            d="M1408 704q0 26-19 45l-448 448q-19 19-45 19t-45-19l-448-448q-19-19-19-45t19-45 45-19h896q26 0 45 19t19 45z"
-                        />
-                    </svg>
-                </button>
-                <div class="panel">
-                    <ul>
-                        <li>
-                            <a target="_blank" href="https://oma.hwc.hr/how-to-play">Matchmaking</a>
-                            <code>https://oma.hwc.hr/how-to-play</code>
-                            <p>1v1 and 2v2 matchmaking system.</p>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://github.com/Meowhal/osu-ahr">osu-ahr</a>
-                            <code>https://github.com/Meowhal/osu-ahr</code>
-                            <p>Creates and hosts auto-rotate lobbies.</p>
-                        </li>
-                    </ul>
-                </div>
-                <button class="accordion">
-                    Player Data
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="1792"
-                        height="1792"
-                        viewBox="0 0 1792 1792"
-                        class="caret"
-                    >
-                        <path
-                            d="M1408 704q0 26-19 45l-448 448q-19 19-45 19t-45-19l-448-448q-19-19-19-45t19-45 45-19h896q26 0 45 19t19 45z"
-                        />
-                    </svg>
-                </button>
-                <div class="panel">
-                    <ul>
-                        <li>
-                            <a target="_blank" href="https://osutracker.com/">osu!tracker</a>
-                            <code>https://osutracker.com/</code>
-                            <p>
-                                Tracks player data, has some unique statistical breakdowns including
-                                a global pp value.
-                            </p>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://osustats.ppy.sh/">osu!stats</a>
-                            <code>https://osustats.ppy.sh/</code>
-                            <p>
-                                A stats website that shows top plays for individual days. Hosted by
-                                peppy.
-                            </p>
-                        </li>
-                        <li>
-                            <a target="_blank" href="http://osuskills.com">osu!skills</a>
-                            <code>http://osuskills.com</code>
-                            <p>
-                                Shows which skills you are better or worse at compared to your
-                                peers.
-                            </p>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://ameobea.me/osutrack/">osu!track</a>
-                            <code>https://ameobea.me/osutrack/</code>
-                            <p>Well organized tracking / breakdown of user profiles.</p>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://osekai.net/">osekai</a>
-                            <code>https://osekai.net/</code>
-                            <p>
-                                Resource used for custom leaderboards, information on achievements,
-                                and polls using osu! accounts.
-                            </p>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://osudaily.net/">osu!daily</a>
-                            <code>https://osudaily.net/</code>
-                            <p>Profile stat tracker with robust user history.</p>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://osustats.click/">osu!stats</a>
-                            <code>https://osustats.click/</code>
-                            <p>In depth user profile with built in pp calculators.</p>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://lookatmysco.re/">lookatmysco.re</a>
-                            <code>https://lookatmysco.re/</code>
-                            <p>Clean scorepost sharing without unnecessary details.</p>
-                        </li>
-                    </ul>
-                </div>
-                <button class="accordion">
-                    Streaming Tools
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="1792"
-                        height="1792"
-                        viewBox="0 0 1792 1792"
-                        class="caret"
-                    >
-                        <path
-                            d="M1408 704q0 26-19 45l-448 448q-19 19-45 19t-45-19l-448-448q-19-19-19-45t19-45 45-19h896q26 0 45 19t19 45z"
-                        />
-                    </svg>
-                </button>
-                <div class="panel">
-                    <ul>
-                        <li>
-                            <a target="_blank" href="https://github.com/l3lackShark/gosumemory"
-                                >gosumemory</a
-                            >
-                            <code>https://github.com/l3lackShark/gosumemory</code>
-                            <p>Memory reader written in golang, incredibly customizable.</p>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://github.com/Piotrekol/StreamCompanion"
-                                >Stream Companion</a
-                            >
-                            <code>https://github.com/Piotrekol/StreamCompanion</code>
-                            <p>
-                                Program directed towards osu! streamers, with functions such as map
-                                information and key counter.
-                            </p>
-                        </li>
-                        <li>
-                            <a
-                                target="_blank"
-                                href="https://awesomeopensource.com/project/OsuSync/RealTimePPDisplayer"
-                                >Real Time PP Display</a
-                            >
-                            <code
-                                >https://awesomeopensource.com/project/OsuSync/RealTimePPDisplayer</code
-                            >
-                            <p>Calculates osu! game data in realtime.</p>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://github.com/uyitroa/osr2mp4-app/"
-                                >.osr to mp4 Converter</a
-                            >
-                            <code>https://github.com/uyitroa/osr2mp4-app/</code>
-                            <p>Converts replay files to video.</p>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://github.com/Wieku/danser-go"
-                                >danser-go</a
-                            >
-                            <code>https://github.com/Wieku/danser-go</code>
-                            <p>High fps video creation tool for osu! replays.</p>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://ordr.issou.best/">o!rdr</a>
-                            <code>https://ordr.issou.best/</code>
-                            <p>Online tool used to create renders of osu! replays.</p>
-                        </li>
-                    </ul>
-                </div>
-                <button class="accordion">
-                    Web Browser Plugins
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="1792"
-                        height="1792"
-                        viewBox="0 0 1792 1792"
-                        class="caret"
-                    >
-                        <path
-                            d="M1408 704q0 26-19 45l-448 448q-19 19-45 19t-45-19l-448-448q-19-19-19-45t19-45 45-19h896q26 0 45 19t19 45z"
-                        />
-                    </svg>
-                </button>
-                <div class="panel">
-                    <ul>
-                        <li>
-                            <a target="_blank" href="https://github.com/oamaok/ezpp">ezpp!</a>
-                            <code>https://github.com/oamaok/ezpp</code>
-                            <p>Calculate pp in your browser. Support for Chrome and Firefox.</p>
-                        </li>
-                        <li>
-                            <a
-                                target="_blank"
-                                href="https://osu.ppy.sh/community/forums/topics/408541"
-                                >osuplus</a
-                            >
-                            <code>https://osu.ppy.sh/community/forums/topics/408541</code>
-                            <p>
-                                Additional stats for the osu website. Supports Chrome, Firefox and
-                                Opera.
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-                <button class="accordion">
-                    Other
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="1792"
-                        height="1792"
-                        viewBox="0 0 1792 1792"
-                        class="caret"
-                    >
-                        <path
-                            d="M1408 704q0 26-19 45l-448 448q-19 19-45 19t-45-19l-448-448q-19-19-19-45t19-45 45-19h896q26 0 45 19t19 45z"
-                        />
-                    </svg>
-                </button>
-                <div class="panel">
-                    <ul>
-                        <li>
-                            <a
-                                target="_blank"
-                                href="https://github.com/LuzianU/OsuCollectionGenerator"
-                                >OsuCollectionGenerator</a
-                            >
-                            <code>https://github.com/LuzianU/OsuCollectionGenerator</code>
-                            <p>Allows for easy creation of collections.</p>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://github.com/henntix/osu-cleaner"
-                                >osu! cleaner</a
-                            >
-                            <code>https://github.com/henntix/osu-cleaner</code>
-                            <p>Helps clean up your game if you have a lot of maps.</p>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://github.com/FunOrange/osu-trainer"
-                                >FunOrange osu! Trainer</a
-                            >
-                            <code>https://github.com/FunOrange/osu-trainer</code>
-                            <p>
-                                A standalone program designed to create custom settings for existing
-                                maps in the osu client.
-                            </p>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://osu-pps.com/">osu-pps</a>
-                            <code>https://osu-pps.com/</code>
-                            <p>Resource used to find the most overweighted maps in osu!.</p>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://github.com/Piotrekol/CollectionManager"
-                                >CollectionManager</a
-                            >
-                            <code>https://github.com/Piotrekol/CollectionManager</code>
-                            <p>Tool used for sharing collections in osu!.</p>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://github.com/Tyrrrz/OsuHelper"
-                                >osu!helper</a
-                            >
-                            <code>https://github.com/Tyrrrz/OsuHelper</code>
-                            <p>Helps find new maps for you based on your top plays.</p>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://osuskinner.com/">osuskinner</a>
-                            <code>https://osuskinner.com/</code>
-                            <p>Online tool for skin mixing and creation.</p>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://github.com/circleguard">Circleguard</a>
-                            <code>https://github.com/circleguard</code>
-                            <p>
-                                A collection of tools to aid in the detection and review of
-                                cheaters.
-                            </p>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://github.com/miniant-git/REAL"
-                                >REAL - REduce Audio Latency</a
-                            >
-                            <code>https://github.com/miniant-git/REAL</code>
-                            <p>A program to reduce audio latency in Windows 10.</p>
-                            <p>
-                                Unmaintained and may disable a CPU thread (can be fixed by
-                                restarting computer)
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <br />
-            <br />
+<body onload="req('CCPupp')">
+    <div class="navbar"><span class="navbar-title">osu!tools</span></div>
+    <div class="body">
+        <div class="section">
+            <p>
+                This is a list of 3rd party tools related to the rhythm game
+                <a href="https://osu.ppy.sh">osu!</a>
+            </p>
+            <p>
+                If you would like your work added to the list, please make a pull request at
+                <a href="https://github.com/CCPupp/osutools">the github repository.</a>
+            </p>
+            <p>
+                Not familiar with github? Join
+                <a href="https://discord.gg/PsjKSvR4WS">my development discord</a> and make a
+                feature request.
+            </p>
         </div>
-    </body>
+        <div class="list">
+            <button class="accordion">
+                API Wrappers
+                <div class="caret"></div>
+            </button>
+            <div class="panel">
+                <h2>
+                    Disclaimer: The new version of the API (V2) is still under development by
+                    peppy. Apps using V2 wrappers are subject to breaking if peppy makes a
+                    change.
+                </h2>
+                <ul>
+                    <li>
+                        <a target="_blank" href="https://github.com/circleguard/ossapi">Python3 API</a>
+                        <code>https://github.com/circleguard/ossapi</code>
+                        <p>Support for both V1 and V2 of the API.</p>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://github.com/Kiritsu/OsuSharp">C# API</a>
+                        <code>https://github.com/Kiritsu/OsuSharp</code>
+                        <p>Support for V1 only, V2 is WIP.</p>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://github.com/thehowl/go-osuapi">golang API</a>
+                        <code>https://github.com/thehowl/go-osuapi</code>
+                        <p>Support for V1 only.</p>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://github.com/nicholastay/nodesu">node.js API</a>
+                        <code>https://github.com/nicholastay/nodesu</code>
+                        <p>Support for V1 only.</p>
+                    </li>
+                </ul>
+            </div>
+            <button class="accordion">
+                Communities / Leaderboards
+                <div class="caret"></div>
+            </button>
+            <div class="panel">
+                <ul>
+                    <li>
+                        <a target="_blank" href="https://states.osutools.com">USA State Leaderboard</a>
+                        <code>https://states.osutools.com</code>
+                        <p>A self-maintined leaderboard for all 50 states.</p>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://osuchan.syrin.me/">Custom Leaderboards</a>
+                        <code>https://osuchan.syrin.me/</code>
+                        <p>Leaderboards for many different skillsets or groups of people.</p>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://snipe.huismetbenen.nl/rankings/ca/osu/weighted-pp">Country
+                            Snipe Leaderboard</a>
+                        <code>https://snipe.huismetbenen.nl/rankings/ca/osu/weighted-pp</code>
+                        <p>Shows how many #1's players have on country leaderboards.</p>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://osekai.net/medals/">osu! Achievements / Medals Discussion</a>
+                        <code>https://osekai.net/medals/</code>
+                        <p>
+                            Provides information on achievements and how to earn them as well as
+                            community voted difficulty.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <button class="accordion">
+                Drivers
+                <div class="caret"></div>
+            </button>
+            <div class="panel">
+                <ul>
+                    <li>
+                        <a target="_blank" href="https://github.com/OpenTabletDriver/OpenTabletDriver">Open Tablet
+                            Driver</a>
+                        <code>https://github.com/OpenTabletDriver/OpenTabletDriver</code>
+                        <p>
+                            Cross platform tablet drivers with no admin access required, peppy
+                            has implemented a version of this into lazer.
+                        </p>
+                        <p>MAINTAINED AND WORKING</p>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://github.com/hawku/TabletDriver">Hawku</a>
+                        <code>https://github.com/hawku/TabletDriver</code>
+                        <p>
+                            The "original" tablet driver. Unmaintained, but still very popular
+                            and stable.
+                        </p>
+                        <p>CURRENTLY BROKEN</p>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://github.com/Devocub/TabletDriver">Devocub</a>
+                        <code>https://github.com/Devocub/TabletDriver</code>
+                        <p>Fork of the Hawku drivers with some added features.</p>
+                        <p>CURRENTLY BROKEN</p>
+                    </li>
+                </ul>
+            </div>
+            <button class="accordion">
+                Guides
+                <div class="caret"></div>
+            </button>
+            <div class="panel">
+                <ul>
+                    <li>
+                        <a target="_blank" href="https://www.youtube.com/watch?v=uc99yWeP1h4">osu!phd - DigitalHypno
+                            Skill Breakdown</a>
+                        <p>A comprehensive guide to every skill in osu! by DigitalHypno.</p>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.youtube.com/watch?v=yXdtbFNgCfY">Spare Tapping</a>
+                        <p>Tips to improve tapping speed by Spare.</p>
+                    </li>
+                    <li>
+                        <a target="_blank"
+                            href="https://docs.google.com/document/d/1l9JG6gLRDGEoQmqaEQbQSikfFNauxtQm3LfIxmdaadQ/edit">RyuK
+                            Speed</a>
+                        <p>In-depth guide on how to improve speed by RyuK.</p>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.youtube.com/c/pishifat/playlists">Pishifat's YouTube
+                            channel</a>
+                        <p>In-depth videos on mapping and other osu! related content.</p>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.youtube.com/c/Tonehhosu">Tonehhosu's YouTube channel</a>
+                        <p>Several useful guides for all play levels.</p>
+                    </li>
+                    <li>
+                        <a target="_blank"
+                            href="https://www.reddit.com/r/osugame/comments/hqoakj/tutorial_removing_perceivable_latency_for_good/">Reducing
+                            Audio Latency</a>
+                        <p>Reddit post on methods of reducing audio latency.</p>
+                    </li>
+                </ul>
+            </div>
+            <button class="accordion">
+                Mapping Tools
+                <div class="caret"></div>
+            </button>
+            <div class="panel">
+                <ul>
+                    <li>
+                        <a target="_blank" href="https://mappingtools.github.io/">Mapping-Tools by Olibomby and
+                            Potoofu</a>
+                        <code>https://mappingtools.github.io/</code>
+                        <p>
+                            Program used for advanced slider creation, hitsounding, timing,
+                            among other helpful tools.
+                        </p>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://github.com/Naxesss/MapsetVerifier">MapsetVerifier</a>
+                        <code>https://github.com/Naxesss/MapsetVerifier</code>
+                        <p>
+                            Tests for quantifiable issues in beatmapsets, such as unsnapped
+                            objects and unused files.
+                        </p>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://slider.little.moe/">SliderStudio</a>
+                        <code>https://slider.little.moe/</code>
+                        <p>Online tool used for advanced slider creation.</p>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://github.com/Himada4/OsuCollabToolFinal">osuCollabTool</a>
+                        <code>https://github.com/Himada4/OsuCollabToolFinal</code>
+                        <p>
+                            Program that can merge and compare .osu files, among other things.
+                        </p>
+                    </li>
+                    <li>
+                        <a targer="_blank" href="https://github.com/Damnae/storybrew">storybrew</a>
+                        <code>https://github.com/Damnae/storybrew</code>
+                        <p>Storyboard editor with robust features.</p>
+                    </li>
+                </ul>
+            </div>
+            <button class="accordion">
+                Multiplayer
+                <div class="caret"></div>
+            </button>
+            <div class="panel">
+                <ul>
+                    <li>
+                        <a target="_blank" href="https://oma.hwc.hr/how-to-play">Matchmaking</a>
+                        <code>https://oma.hwc.hr/how-to-play</code>
+                        <p>1v1 and 2v2 matchmaking system.</p>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://github.com/Meowhal/osu-ahr">osu-ahr</a>
+                        <code>https://github.com/Meowhal/osu-ahr</code>
+                        <p>Creates and hosts auto-rotate lobbies.</p>
+                    </li>
+                </ul>
+            </div>
+            <button class="accordion">
+                Player Data
+                <div class="caret"></div>
+            </button>
+            <div class="panel">
+                <ul>
+                    <li>
+                        <a target="_blank" href="https://osutracker.com/">osu!tracker</a>
+                        <code>https://osutracker.com/</code>
+                        <p>
+                            Tracks player data, has some unique statistical breakdowns including
+                            a global pp value.
+                        </p>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://osustats.ppy.sh/">osu!stats</a>
+                        <code>https://osustats.ppy.sh/</code>
+                        <p>
+                            A stats website that shows top plays for individual days. Hosted by
+                            peppy.
+                        </p>
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://osuskills.com">osu!skills</a>
+                        <code>http://osuskills.com</code>
+                        <p>
+                            Shows which skills you are better or worse at compared to your
+                            peers.
+                        </p>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://ameobea.me/osutrack/">osu!track</a>
+                        <code>https://ameobea.me/osutrack/</code>
+                        <p>Well organized tracking / breakdown of user profiles.</p>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://osekai.net/">osekai</a>
+                        <code>https://osekai.net/</code>
+                        <p>
+                            Resource used for custom leaderboards, information on achievements,
+                            and polls using osu! accounts.
+                        </p>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://osudaily.net/">osu!daily</a>
+                        <code>https://osudaily.net/</code>
+                        <p>Profile stat tracker with robust user history.</p>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://osustats.click/">osu!stats</a>
+                        <code>https://osustats.click/</code>
+                        <p>In depth user profile with built in pp calculators.</p>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://lookatmysco.re/">lookatmysco.re</a>
+                        <code>https://lookatmysco.re/</code>
+                        <p>Clean scorepost sharing without unnecessary details.</p>
+                    </li>
+                </ul>
+            </div>
+            <button class="accordion">
+                Streaming Tools
+                <div class="caret"></div>
+            </button>
+            <div class="panel">
+                <ul>
+                    <li>
+                        <a target="_blank" href="https://github.com/l3lackShark/gosumemory">gosumemory</a>
+                        <code>https://github.com/l3lackShark/gosumemory</code>
+                        <p>Memory reader written in golang, incredibly customizable.</p>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://github.com/Piotrekol/StreamCompanion">Stream Companion</a>
+                        <code>https://github.com/Piotrekol/StreamCompanion</code>
+                        <p>
+                            Program directed towards osu! streamers, with functions such as map
+                            information and key counter.
+                        </p>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://awesomeopensource.com/project/OsuSync/RealTimePPDisplayer">Real
+                            Time PP Display</a>
+                        <code>https://awesomeopensource.com/project/OsuSync/RealTimePPDisplayer</code>
+                        <p>Calculates osu! game data in realtime.</p>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://github.com/uyitroa/osr2mp4-app/">.osr to mp4 Converter</a>
+                        <code>https://github.com/uyitroa/osr2mp4-app/</code>
+                        <p>Converts replay files to video.</p>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://github.com/Wieku/danser-go">danser-go</a>
+                        <code>https://github.com/Wieku/danser-go</code>
+                        <p>High fps video creation tool for osu! replays.</p>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://ordr.issou.best/">o!rdr</a>
+                        <code>https://ordr.issou.best/</code>
+                        <p>Online tool used to create renders of osu! replays.</p>
+                    </li>
+                </ul>
+            </div>
+            <button class="accordion">
+                Web Browser Plugins
+                <div class="caret"></div>
+            </button>
+            <div class="panel">
+                <ul>
+                    <li>
+                        <a target="_blank" href="https://github.com/oamaok/ezpp">ezpp!</a>
+                        <code>https://github.com/oamaok/ezpp</code>
+                        <p>Calculate pp in your browser. Support for Chrome and Firefox.</p>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://osu.ppy.sh/community/forums/topics/408541">osuplus</a>
+                        <code>https://osu.ppy.sh/community/forums/topics/408541</code>
+                        <p>
+                            Additional stats for the osu website. Supports Chrome, Firefox and
+                            Opera.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <button class="accordion">
+                Other
+                <div class="caret"></div>
+            </button>
+            <div class="panel">
+                <ul>
+                    <li>
+                        <a target="_blank"
+                            href="https://github.com/LuzianU/OsuCollectionGenerator">OsuCollectionGenerator</a>
+                        <code>https://github.com/LuzianU/OsuCollectionGenerator</code>
+                        <p>Allows for easy creation of collections.</p>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://github.com/henntix/osu-cleaner">osu! cleaner</a>
+                        <code>https://github.com/henntix/osu-cleaner</code>
+                        <p>Helps clean up your game if you have a lot of maps.</p>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://github.com/FunOrange/osu-trainer">FunOrange osu! Trainer</a>
+                        <code>https://github.com/FunOrange/osu-trainer</code>
+                        <p>
+                            A standalone program designed to create custom settings for existing
+                            maps in the osu client.
+                        </p>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://osu-pps.com/">osu-pps</a>
+                        <code>https://osu-pps.com/</code>
+                        <p>Resource used to find the most overweighted maps in osu!.</p>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://github.com/Piotrekol/CollectionManager">CollectionManager</a>
+                        <code>https://github.com/Piotrekol/CollectionManager</code>
+                        <p>Tool used for sharing collections in osu!.</p>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://github.com/Tyrrrz/OsuHelper">osu!helper</a>
+                        <code>https://github.com/Tyrrrz/OsuHelper</code>
+                        <p>Helps find new maps for you based on your top plays.</p>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://osuskinner.com/">osuskinner</a>
+                        <code>https://osuskinner.com/</code>
+                        <p>Online tool for skin mixing and creation.</p>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://github.com/circleguard">Circleguard</a>
+                        <code>https://github.com/circleguard</code>
+                        <p>
+                            A collection of tools to aid in the detection and review of
+                            cheaters.
+                        </p>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://github.com/miniant-git/REAL">REAL - REduce Audio Latency</a>
+                        <code>https://github.com/miniant-git/REAL</code>
+                        <p>A program to reduce audio latency in Windows 10.</p>
+                        <p>
+                            Unmaintained and may disable a CPU thread (can be fixed by
+                            restarting computer)
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <br />
+        <br />
+    </div>
+</body>
 
-    <script src="web/scripts/main.js"></script>
+<script src="web/scripts/main.js"></script>
 
-    <footer>
-        <p id="lastModified"></p>
-    </footer>
+<footer>
+    <p id="lastModified"></p>
+</footer>
+
 </html>
