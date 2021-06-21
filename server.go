@@ -4,16 +4,17 @@ import (
 	"io/ioutil"
 	"log"
 	"net/http"
+
+	"gopkg.in/yaml.v2"
 )
 
+type Settings struct {
+	Testing string `yaml:"testing"`
+}
+
 func main() {
-	content, err := ioutil.ReadFile("testing.txt")
-
-	if err != nil {
-		log.Fatal(err)
-	}
-
-	testing := string(content)
+	var settings Settings
+	settings.getSettings()
 
 	// Handler points to available directories
 	http.Handle("/web/html", http.StripPrefix("/web/html", http.FileServer(http.Dir("web/html"))))
@@ -27,7 +28,7 @@ func main() {
 	})
 
 	//Serves local webpage for testing
-	if testing == "true" {
+	if settings.Testing == "true" {
 		errhttp := http.ListenAndServe("localhost:3000", nil)
 		if errhttp != nil {
 			log.Fatal("Web server (HTTP): ", errhttp)
@@ -40,4 +41,18 @@ func main() {
 		}
 	}
 
+}
+
+func (c *Settings) getSettings() *Settings {
+
+	yamlFile, err := ioutil.ReadFile("settings.yaml")
+	if err != nil {
+		log.Printf("yamlFile.Get err   #%v ", err)
+	}
+	err = yaml.Unmarshal(yamlFile, c)
+	if err != nil {
+		log.Fatalf("Unmarshal: %v", err)
+	}
+
+	return c
 }
